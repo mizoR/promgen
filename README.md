@@ -25,6 +25,20 @@ See the [Promgen introduction slides](http://www.slideshare.net/tokuhirom/promge
 
 ## Getting started
 
+```
+# 1. Install the gem from the command line.
+$ gem install promgen
+
+# 2. Generate a new project
+promgen new awesome_promgen_project
+
+# 3. Change your directory to sweet_dashboard_project and bundle gems
+bundle
+
+# 4. Start the server
+bundle exec promgen start
+```
+
 Below are the steps to get started with Promgen. Note that you should **run Promgen and Prometheus on the same machine.**
 
 ### 1. Create a Promgen configuration .yml file

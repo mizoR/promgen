@@ -1,0 +1,5 @@
+/.bundle
+/.gitignore
+/.env
+/db
+/vendor/bundle

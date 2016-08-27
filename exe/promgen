@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'promgen'
+require 'promgen/cli'
+
+Promgen::CLI.start(ARGV)

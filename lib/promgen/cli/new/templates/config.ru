@@ -16,8 +16,8 @@ pass = SecureRandom.hex
 print "PASSWORD: #{pass}\n"
 
 run Rack::URLMap.new(
-  '/alert/' => Rack::Auth::Basic.new(app.alert) do |username, password|
+    '/alert/' => Rack::Auth::Basic.new(app.alert) do |username, password|
     username == 'promgen' && password == pass
-  end,
-  '/' => Rack::Protection::RemoteReferrer.new(app.web, allow_empty_referrer: false)
+    end,
+    '/' => Rack::Protection::RemoteReferrer.new(app.web, allow_empty_referrer: false)
 )

@@ -4,4 +4,4 @@
 /.idea/
 /coverage/
 /vendor/
-config.yml
+/Gemfile.lock
